@@ -17,6 +17,7 @@ import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import 	android.content.pm.ActivityInfo;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 
@@ -84,7 +85,7 @@ public class LaunchReviewPlugin implements MethodCallHandler, FlutterPlugin, Act
                     // intercept the intent
                     rateIntent.setComponent(componentName);
                    if (showToast){
-                        Toast.makeText(activity, toastMessage, 2000).show();
+                        Toast.makeText(activity, toastMessage, Toast.LENGTH_SHORT).show();
                    } 
 
                     activity.startActivity(rateIntent);
