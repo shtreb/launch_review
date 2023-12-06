@@ -84,7 +84,7 @@ public class LaunchReviewPlugin implements MethodCallHandler, FlutterPlugin, Act
                     // intercept the intent
                     rateIntent.setComponent(componentName);
                    if (showToast){
-                        Toast.makeText(activity, toastMessage, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(activity, toastMessage, 2000).show();
                    } 
 
                     activity.startActivity(rateIntent);
